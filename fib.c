@@ -3,7 +3,7 @@
 int main(void) {
     int x, y, z;
 
-    while (1) {
+    for (int i = 0; i < 2; i++) {
         x = 0;
         y = 1;
         do {
@@ -12,6 +12,6 @@ int main(void) {
            z = x + y;
            x = y;
            y = z; 
-        } while (x < 255);
+        } while (x < 100000);
     }
 }
